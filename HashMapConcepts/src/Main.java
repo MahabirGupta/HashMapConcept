@@ -10,8 +10,14 @@ public class Main {
         hashMap.put(103,"Anish");
         hashMap.put(104,"Anishkaa");
         hashMap.put(105,"Happy Family");
+        hashMap.put(103,"Mahabir"); // key cannot be duplicated
+        hashMap.put(106,"Mahabir"); // value can be duplicated
 //        print all the values in the HashMap
         System.out.println(hashMap);
+
+//        to get the value from the key
+        System.out.println(hashMap.get(102));
+
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
     }
