@@ -1,4 +1,7 @@
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,19 +60,40 @@ public class Main {
             System.out.println(value);
         }
 
-//        to get individual entry
-        for (int keyVariable:hashMap.keySet()){
-            System.out.println(keyVariable + "       " + hashMap.get(keyVariable));
-        }
-
-//        to get all entry as a set
+        //        to get all entry as a set
         hashMap.entrySet();
         System.out.println(hashMap.entrySet()); // return all the entries as a Set object
 
         System.out.println();
-//        Entry methods
+
+//        to get individual entry using keySet()
+        for (int keyVariable:hashMap.keySet()){
+            System.out.println(keyVariable + "       " + hashMap.get(keyVariable));
+        }
+        System.out.println();
+
+//       to get individual entry using Entry methods
 //        ************************
 
-
+        for (Map.Entry entry:hashMap.entrySet()){ // 101 Mahabir will be stored as a entry in Map.Entry entry
+            entry.getKey();
+            entry.getValue();
+            System.out.println(entry.getKey() + "   " + entry.getValue());
+        }
+        System.out.println();
+//        to get individual entry using iterator method
+        Iterator iterator = hashMap.entrySet().iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+        System.out.println();
+//        or
+        Set set = hashMap.entrySet(); // get all the entries as a Set
+        Iterator iterator1 = set.iterator();
+        while (iterator1.hasNext()){
+            Map.Entry entry = (Map.Entry) iterator1.next();
+//            System.out.println(entry);
+            System.out.println(entry.getKey() + "  " + entry.getValue());
+        }
     }
 }
