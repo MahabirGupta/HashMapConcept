@@ -36,6 +36,14 @@ public class Main {
 //        to check if a HashMap is empty
         System.out.println(hashMap.isEmpty());
 
+        System.out.println();
+
+//        to get all the keys from the HashSet
+        System.out.println(hashMap.keySet()); //return all the keys as a Set Collection because duplicates are not allowed
+
+        //        to get all the values from the HashSet
+        System.out.println(hashMap.values()); //return all the values as a Collection because duplicates are  allowed
+
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
     }
