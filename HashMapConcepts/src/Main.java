@@ -31,6 +31,10 @@ public class Main {
         hashMap.containsValue("Happy Family");
         System.out.println(hashMap.containsValue("Happy Family"));
         System.out.println(hashMap.containsValue(" Family"));
+        System.out.println();
+
+//        to check if a HashMap is empty
+        System.out.println(hashMap.isEmpty());
 
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
