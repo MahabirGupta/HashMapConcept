@@ -18,6 +18,9 @@ public class Main {
 //        to get the value from the key
         System.out.println(hashMap.get(102));
 
+//        to remove the key value entry
+        hashMap.remove(106); //remove pair from HashMap
+        System.out.println(hashMap);
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
     }
