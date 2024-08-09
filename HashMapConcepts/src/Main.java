@@ -4,7 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
 //        declare a HaspMap without specifying the data type of the key and values
-        HashMap hashMap = new HashMap<>(); // heterogenous HashMap
+//        HashMap hashMap = new HashMap<>(); // heterogenous HashMap
+
+        //        declare a HaspMap by specifying the data type of the key and values
+        HashMap<Integer,String> hashMap = new HashMap<>(); // homogeneous HashMap
         hashMap.put(101,"Mahabir");
         hashMap.put(102,"Babita");
         hashMap.put(103,"Anish");
@@ -41,14 +44,32 @@ public class Main {
 //        to get all the keys from the HashSet
         System.out.println(hashMap.keySet()); //return all the keys as a Set Collection because duplicates are not allowed
 
+//        to get individual key use for..each loop
+        for (int keyVariable:hashMap.keySet()){
+            System.out.println(keyVariable);
+        }
+
         //        to get all the values from the HashSet
         System.out.println(hashMap.values()); //return all the values as a Collection because duplicates are  allowed
+
+        //        to get individual values use for..each loop
+        for (String value:hashMap.values()){
+            System.out.println(value);
+        }
+
+//        to get individual entry
+        for (int keyVariable:hashMap.keySet()){
+            System.out.println(keyVariable + "       " + hashMap.get(keyVariable));
+        }
 
 //        to get all entry as a set
         hashMap.entrySet();
         System.out.println(hashMap.entrySet()); // return all the entries as a Set object
 
-        //        declare a HaspMap by specifying the data type of the key and values
-        HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
+        System.out.println();
+//        Entry methods
+//        ************************
+
+
     }
 }
