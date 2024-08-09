@@ -44,6 +44,10 @@ public class Main {
         //        to get all the values from the HashSet
         System.out.println(hashMap.values()); //return all the values as a Collection because duplicates are  allowed
 
+//        to get all entry as a set
+        hashMap.entrySet();
+        System.out.println(hashMap.entrySet()); // return all the entries as a Set object
+
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
     }
