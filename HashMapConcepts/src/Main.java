@@ -21,6 +21,17 @@ public class Main {
 //        to remove the key value entry
         hashMap.remove(106); //remove pair from HashMap
         System.out.println(hashMap);
+
+//        to check if a particular key is in the HashMap
+        hashMap.containsKey(104);
+        System.out.println(hashMap.containsKey(104));
+        System.out.println(hashMap.containsKey(106));
+        System.out.println();
+        //        to check if a particular value is in the HashMap
+        hashMap.containsValue("Happy Family");
+        System.out.println(hashMap.containsValue("Happy Family"));
+        System.out.println(hashMap.containsValue(" Family"));
+
         //        declare a HaspMap by specifying the data type of the key and values
         HashMap<Integer,String> hashMap1 = new HashMap<>(); // homogeneous HashMap
     }
